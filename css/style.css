@@ -1,0 +1,318 @@
+
+body {
+    padding-top: 70px;
+    background-color: #f9f9f9;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #2c3e50 !important;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('../images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-header h1 {
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.project-header p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+.student-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+}
+
+.student-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    border-bottom: 2px solid #337ab7;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+
+.portfolio-item {
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.thumbnail {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border: none;
+}
+
+.thumbnail .caption {
+    padding: 15px;
+}
+
+
+.tech-icon {
+    font-size: 40px;
+    color: #337ab7;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+footer h4 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .project-header h1 {
+        font-size: 28px;
+    }
+    
+    .project-header p {
+        font-size: 16px;
+    }
+    
+    .navbar-brand {
+        font-size: 16px;
+    }
+    
+    .student-card {
+        margin-bottom: 20px;
+    }
+}
+.portfolio-item {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-img {
+    position: relative;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 122, 183, 0.9);
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-details {
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-details {
+    transform: translateY(0);
+}
+
+.portfolio-caption {
+    padding: 15px;
+    background: white;
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+.portfolio-caption h4 {
+    margin-top: 0;
+    color: #333;
+}
+
+.portfolio-caption p {
+    margin-bottom: 0;
+    color: #777;
+}
+
+.btn-default {
+    transition: all 0.3s;
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+}
+
+.btn-default:hover {
+    background: white;
+    color: #337ab7;
+    border-color: white;
+}
+.tech-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tech-card h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.student-info {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.student-info p {
+    margin-bottom: 8px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    margin-left: 20px;
+    border-left: 2px solid #337ab7;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.timeline-item.fadeInUp {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-date {
+    position: absolute;
+    left: -90px;
+    top: 0;
+    background: #337ab7;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.timeline-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact-card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact-icon {
+    font-size: 24px;
+    color: #337ab7;
+    width: 40px;
+    height: 40px;
+    background: #eef7ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.media:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.social-links .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.map-placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
