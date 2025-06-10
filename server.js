@@ -4,11 +4,9 @@ const fs = require('fs');
 const app = express();
 const port = process.env.PORT || 5500;
 
-// Настройка middleware
-app.use(express.static(path.join(__dirname))); // Для статических файлов
-app.use(express.urlencoded({ extended: true })); // Для обработки форм
+app.use(express.static(path.join(__dirname)));
+app.use(express.urlencoded({ extended: true }));
 
-// Маршруты для всех страниц
 const pages = ['', 'index', 'about', 'portfolio', 'contacts'];
 
 pages.forEach(page => {
@@ -28,12 +26,10 @@ pages.forEach(page => {
     });
 });
 
-// Обработка 404 ошибок
 app.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname, '404.html'));
 });
 
-// Запуск сервера
 app.listen(port, () => {
     console.log(`Сервер запущен на http://localhost:${port} || http://lilikhome.ddns.net`);
     console.log('Доступные страницы:');
